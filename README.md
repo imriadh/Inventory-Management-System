@@ -1,6 +1,6 @@
 # Inventory Management System
 
-A simple and user-friendly **Inventory Management System** built using Java Swing for the GUI and Oracle 11g Express Edition as the database. This application allows users to manage products, suppliers, and orders efficiently.
+A simple and user-friendly **Inventory Management System** built using Java Swing for the GUI and Oracle 21c as the database. This application allows users to manage products, suppliers, and orders efficiently.
 
 ---
 
@@ -11,14 +11,14 @@ A simple and user-friendly **Inventory Management System** built using Java Swin
 - **Order Placement**: Place orders for products and update stock levels.
 - **Low Stock Alerts**: Identify products with low stock levels.
 - **Total Revenue Calculation**: Calculate total revenue from all orders.
-- **Data Persistence**: All data is stored in an Oracle database.
+- **Data Persistence**: All data is stored in an Oracle 21c database.
 
 ---
 
 ## Technologies Used
 
 - **Frontend**: Java Swing (GUI)
-- **Backend**: Oracle 11g Express Edition
+- **Backend**: Oracle 21c
 - **Programming Language**: Java
 - **Database Connectivity**: JDBC
 
@@ -28,15 +28,15 @@ A simple and user-friendly **Inventory Management System** built using Java Swin
 
 ### Prerequisites
 
-1. Install **Oracle 11g Express Edition**:
-   - Download and install [Oracle 11g XE](https://www.oracle.com/database/technologies/xe-prior-releases.html).
+1. Install **Oracle 21c**:
+   - Download and install [Oracle 21c](https://www.oracle.com/database/technologies/oracle21c.html).
    - Set up a database user and schema.
 
 2. Install **Java Development Kit (JDK)**:
-   - Ensure you have JDK 8 or later installed.
+   - Ensure you have JDK 11 or later installed.
 
 3. Add **Oracle JDBC Driver**:
-   - Download the `ojdbc6.jar` or `ojdbc7.jar` file from the [Oracle JDBC Drivers page](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html).
+   - Download the `ojdbc10.jar` or `ojdbc8.jar` file from the [Oracle JDBC Drivers page](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html).
    - Add the JAR file to your project's classpath.
 
 ### Steps to Run
