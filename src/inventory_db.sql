@@ -1,0 +1,27 @@
+-- Suppliers Table
+CREATE TABLE Suppliers (
+    SupplierID NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Name VARCHAR2(100) NOT NULL,
+    Contact VARCHAR2(15),
+    Email VARCHAR2(100)
+);
+
+-- Products Table
+CREATE TABLE Products (
+    ProductID NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Name VARCHAR2(100) NOT NULL,
+    Description VARCHAR2(255),
+    Price NUMBER(10, 2) NOT NULL,
+    Quantity NUMBER(6) NOT NULL,
+    SupplierID NUMBER(6),
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID)
+);
+
+-- Orders Table
+CREATE TABLE Orders (
+    OrderID NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    ProductID NUMBER(6) NOT NULL,
+    Quantity NUMBER(6) NOT NULL,
+    OrderDate DATE DEFAULT SYSDATE,
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE CASCADE
+);
